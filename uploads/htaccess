@@ -1,0 +1,7 @@
+# Force download for specific file types instead of opening in browser
+<FilesMatch "\.(pdf|doc|docx|ppt|pptx|xls|xlsx)$">
+    Header set Content-Disposition "attachment"
+</FilesMatch>
+
+# Prevent directory listing
+Options -Indexes
